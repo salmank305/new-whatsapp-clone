@@ -19,6 +19,8 @@ function App() {
     .catch((err) => alert(err.message));
 };
   return (
+  
+
     <Router>
       <div className="App">
         {user ? (
@@ -37,6 +39,7 @@ function App() {
         )}
       </div>
     </Router>
+
   );
 }
 
