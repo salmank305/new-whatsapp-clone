@@ -9,7 +9,9 @@ function Home({currentUser,signOut}) {
           <Sidebar currentUser={currentUser} signOut={signOut}/>
           {/* a container with whs app logo */}
           <div className='home-bg'>
-            <img src='./whatsAppbg.jpg' alt=''/>
+   
+            <img src='./WhatsAppbg.png' alt='logo'/>
+         
           </div>
         </div>
     </div>
