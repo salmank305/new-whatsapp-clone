@@ -3,7 +3,7 @@ import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./Sidebar.css";
-import { Search } from "@mui/icons-material";
+import { Logout, Search, ToggleOn } from "@mui/icons-material";
 import Userprofile from "./Userprofile";
 import db from "../firebase";
 function Sidebar({ currentUser, signOut }) {
@@ -63,13 +63,16 @@ function Sidebar({ currentUser, signOut }) {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <div className="sidebar-header-img" onClick={signOut}>
+        <div className="sidebar-header-img">
           <img src={currentUser?.photoURL} alt="" />
         </div>
         <div className="sidebar-header-btn">
-          <DonutLargeIcon />
+          {/* <button onClick={signOut}>Logout</button> */}
+          
+          <ToggleOn/>
           <InsertCommentIcon />
-          <MoreVertIcon />
+
+          <Logout  onClick={signOut}/>
         </div>
       </div>
 
