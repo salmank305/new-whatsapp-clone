@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./Sidebar.css";
-import { Logout, Search, ToggleOn } from "@mui/icons-material";
+import { Logout, Search } from "@mui/icons-material";
 import Userprofile from "./Userprofile";
 import db from "../firebase";
 function Sidebar({ currentUser, signOut }) {
@@ -67,9 +66,8 @@ function Sidebar({ currentUser, signOut }) {
           <img src={currentUser?.photoURL} alt="" />
         </div>
         <div className="sidebar-header-btn">
-          {/* <button onClick={signOut}>Logout</button> */}
           
-          <ToggleOn/>
+          <DonutLargeIcon/>
           <InsertCommentIcon />
 
           <Logout  onClick={signOut}/>
